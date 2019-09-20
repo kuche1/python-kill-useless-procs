@@ -81,6 +81,7 @@ scan = Scan()
 
 scan.start()
 
+print("Press CTRL+C to make a choice [may not be instant, be patient]")
 
 ind = 0
 while True:
@@ -101,7 +102,7 @@ while True:
             input('Invalid choice.')
         else:
             if c < 0 or c > ind:
-                input('Invalid chouce.')
+                input('Invalid choice.')
             else:
                 m = input('(w)hitelist / (b)lacklist: ')
                 if m == 'w':
